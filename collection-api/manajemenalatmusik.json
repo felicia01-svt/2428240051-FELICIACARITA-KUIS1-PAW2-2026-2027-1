@@ -1,0 +1,123 @@
+{
+  "info": {
+    "_postman_id": "888f1ac4-6e5b-485b-9a59-5f8e4547479f",
+    "name": "Manajemen Alat Musik",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58519451",
+    "_collection_link": "https://go.postman.co/collection/58519451-888f1ac4-6e5b-485b-9a59-5f8e4547479f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Create Alat Musik",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nama_alat\": \"\",\r\n  \"jenis_alat\": \"\",\r\n  \"harga\": -7800000000\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{URL}}/alatMusik",
+          "host": [
+            "{{URL}}"
+          ],
+          "path": [
+            "alatMusik"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "List Alat Musik",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{URL}}/alatMusik",
+          "host": [
+            "{{URL}}"
+          ],
+          "path": [
+            "alatMusik"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Tampil AlatMusik",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{URL}}/alatMusik/6acf8f7f0312be5399092227",
+          "host": [
+            "{{URL}}"
+          ],
+          "path": [
+            "alatMusik",
+            "6acf8f7f0312be5399092227"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update AlatMusik",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nama_alat\": \"Gitar Klasik\",\r\n  \"jenis_alat\": \"Petik\",\r\n  \"harga\": 3500000\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{URL}}/alatMusik/6acf8f7f0312be5399092227",
+          "host": [
+            "{{URL}}"
+          ],
+          "path": [
+            "alatMusik",
+            "6acf8f7f0312be5399092227"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete AlatMusik",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{URL}}/alatMusik/6acf8f7f0312be5399092227",
+          "host": [
+            "{{URL}}"
+          ],
+          "path": [
+            "alatMusik",
+            "6acf8f7f0312be5399092227"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "URL",
+      "value": ""
+    }
+  ]
+}
